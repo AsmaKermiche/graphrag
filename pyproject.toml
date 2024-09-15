@@ -65,7 +65,7 @@ tiktoken = "^0.7.0"
 
 # Data-Sci
 numba = "0.60.0"
-numpy = "^1.25.2"
+numpy = "^1.26.4"
 graspologic = "^3.4.1"
 networkx = "^3"
 fastparquet = "^2024.2.0"
