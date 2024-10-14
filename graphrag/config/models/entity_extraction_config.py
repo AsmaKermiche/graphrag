@@ -45,7 +45,7 @@ class EntityExtractionConfig(LLMConfig):
             **self.parallelization.model_dump(),
             "extraction_prompt": (Path(root_dir) / self.prompt)
             .read_bytes()
-            .decode(encoding="utf-8")
+            .decode(encoding="utf-8", errors="replace")
             if self.prompt
             else None,
             "max_gleanings": self.max_gleanings,
